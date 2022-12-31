@@ -1,0 +1,11 @@
+name: Run test file before merging
+
+on:
+  pull_request:
+    branchs: [ $default-branch ]
+   
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "heloo"
